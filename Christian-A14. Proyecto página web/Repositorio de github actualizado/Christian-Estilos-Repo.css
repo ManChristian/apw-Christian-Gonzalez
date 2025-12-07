@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #ecf0f1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#contenedor-min {
+    text-align: center;
+    padding: 40px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #34495e;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+}
+
+.menu-nav a {
+    text-decoration: none;
+    display: inline-block;
+    background-color: #3498db;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 6px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.25);
+    transition: background-color 0.3s ease;
+}
+
+.menu-nav a:link,
+.menu-nav a:visited {
+    color: white;
+}
+
+.menu-nav a:hover {
+    background-color: #2c3e50;
+    border-bottom: 3px solid #f1c40f;
+}
+
+a[target="_blank"]::after {
+    content: " [Ext]";
+    font-size: 0.9em;
+    color: white;
+}
