@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Web de Christian: Valoración de Desarrollo</title>
+    <link rel="stylesheet" type="text/css" href="Christian-Estilos.css" media="screen" />
+    <style>
+        #caja-formato p { color: orange !important; }
+    </style>
+</head>
+<body>
+
+    <div id="contenedor-principal">
+
+        <h1>Sitio Web de <mark>Christian</mark> (h1)</h1>
+        <h2>Demostración Avanzada de HTML y CSS (h2)</h2>
+        <h3>Sección de Fundamentos de Texto (h3)</h3>
+        <h4>Cabecera de Nivel 4 (h4)</h4>
+        <h5>Cabecera de Nivel 5 (h5)</h5>
+        <h6>Cabecera de Nivel 6 (h6)</h6>
+
+        <hr>
+
+        <div class="seccion-contenido">
+            <h2>Párrafos y Formato de Texto</h2>
+
+            <p>
+                Este es un **párrafo** (`p`) introductorio. Utilizamos texto en **negrita (`strong`)** para destacar,
+                y texto en _cursiva (`em`)_ para énfasis. Las etiquetas básicas como <b>negrita (`b`)</b> e <i>cursiva (`i`)</i>
+                aún se admiten. El texto <mark>resaltado (`mark`)</mark> es clave.
+            </p>
+
+            <p id="caja-formato">
+                Aquí hay texto más técnico con una <small>nota legal (`small`)</small>.
+                También demostramos el subíndice (SO<mark>₂</mark>) (`sub`) y el superíndice (10<mark>⁴</mark>) (`sup`).
+                Este texto pertenece a la división con atributo `id`.
+            </p>
+        </div>
+
+        <hr>
+
+        <div class="seccion-contenido menu-nav">
+            <h2>Enlaces, Listas e Información Personal</h2>
+
+            <ul id="menu-horizontal">
+                <li><a href="#tablas">Tablas</a></li>
+                <li><a href="Christian-PaginaEjemplo.html">Página Interna</a></li>
+                <li><a href="https://www.google.com" target="_blank">Búsqueda Externa (Google)</a></li>
+                <li><a href="#formulario">Formulario de Contacto</a></li>
+                <li><span class="info-usuario">Identidad: Christian</span></li>
+            </ul>
+
+            <p>Lista ordenada de Requisitos:</p>
+            <ol class="lista-pasos">
+                <li>Estructura HTML completa</li>
+                <li>Estilos CSS avanzados</li>
+                <li>Cumplir con todos los puntos de la lista</li>
+            </ol>
+
+            <p>Lista de descripción de Tecnologías:</p>
+            <dl>
+                <dt>Frontend</dt>
+                <dd>Lenguajes y herramientas que se ejecutan en el navegador del usuario.</dd>
+                <dt>Backend</dt>
+                <dd>Lógica y bases de datos que se ejecutan en el servidor.</dd>
+            </dl>
+        </div>
+
+        <hr>
+
+        <div class="seccion-contenido" id="tablas">
+            <h2>Imágenes y Tablas</h2>
+
+            <img src="Christian-ImagenEjemplo.PNG" width="300" height="150" alt="Imagen de demostración local">
+
+            <table>
+                <caption>Distribución de Tareas por Equipo (ejemplo)</caption>
+                <thead>
+                    <tr>
+                        <th>Proyecto</th>
+                        <th>Estado</th>
+                        <th colspan="2">Asignados</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Diseño Web</td>
+                        <td>Completado</td>
+                        <td colspan="2">Equipo A</td>
+                    </tr>
+                    <tr>
+                        <td>Despliegue App</td>
+                        <td rowspan="2">En Proceso</td>
+                        <td>Christian</td>
+                        <td>María</td>
+                    </tr>
+                    <tr>
+                        <td>Mantenimiento</td>
+                        <td>Javier</td>
+                        <td>Lucía</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Total de Proyectos: 3</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+
+        <hr>
+
+        <div class="seccion-contenido" id="formulario">
+            <h2>Formularios Interactivos</h2>
+
+            <form action="procesar-datos.php" method="post" class="formulario-columnas">
+                <fieldset>
+                    <legend>Datos del Solicitante</legend>
+
+                    <p>
+                        <label for="nombre">Nombre Completo:</label>
+                        <input type="text" id="nombre" name="nombre_usuario" value="" required>
+                    </p>
+
+                    <p>
+                        <label for="email">Correo Electrónico:</label>
+                        <input type="email" id="email" name="email_usuario" value="">
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Detalles de la Petición</legend>
+
+                    <p>
+                        <label for="tipo">Tipo de Petición:</label>
+                        <select id="tipo" name="tipo_peticion">
+                            <option value="consulta">Consulta</option>
+                            <option value="feedback" selected>Feedback</option>
+                            <option value="soporte">Soporte Técnico</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="desc">Comentarios:</label>
+                        <textarea id="desc" name="comentarios" rows="4" cols="50" maxlength="300"></textarea>
+                    </p>
+
+                    <div class="grupo-opciones">
+                        <input type="checkbox" id="newsletter" name="newsletter_opt" value="si">
+                        <label for="newsletter">Deseo recibir la newsletter</label>
+                    </div>
+
+                    <div class="grupo-botones">
+                        <button type="reset" class="btn-secundario">Limpiar Formulario</button>
+                        <input type="submit" value="Enviar Petición">
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
